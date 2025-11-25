@@ -83,8 +83,8 @@
         <div style="width:100%;display:flex;flex-direction:column;gap:6px;margin-top:auto">
           <div class="socials">
             <a class="chip" href="#" aria-label="LinkedIn">LinkedIn</a>
-            <a class="chip" href="#" aria-label="GitHub">GitHub</a>
-            <a class="chip" href="#" aria-label="Twitter">Twitter</a>
+            <a class="chip" href="#" aria-label="Facebook">Facebook</a>
+            <a class="chip" href="#" aria-label="Instagram">Instagram</a>
           </div>
           <div style="display:flex;justify-content:center;margin-top:6px"><span class="chip">Hermosillo, Sonora</span></div>
         </div>
@@ -151,11 +151,11 @@
     // Generar y descargar vCard simple
     document.getElementById('downloadVcf').addEventListener('click', function(e){
       e.preventDefault();
-      const vcard = `BEGIN:VCARD\nVERSION:3.0\nFN:Tu Nombre Aquí\nORG:Tu Empresa\nTITLE:Desarrollador Web\nEMAIL:tu@correo.com\nTEL:+520000000000\nADR:;;Ciudad;;México\nEND:VCARD`;
+      const vcard = `BEGIN:VCARD\nVERSION:3.0\nFN:Enrique Maynez Perez\nORG:Prime Lock Puertas de Seguridad\nTITLE:Propietario\nEMAIL:enrmp2002@gmail.com\nTEL:+526625228513\nADR:;;Hermosillo;;México\nEND:VCARD`;
       const blob = new Blob([vcard], {type: 'text/vcard'});
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
-      a.href = url; a.download = 'tu-nombre.vcf';
+      a.href = url; a.download = 'Enrique-Maynez-P.vcf';
       document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
     });
   </script>
