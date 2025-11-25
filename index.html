@@ -56,6 +56,69 @@
       .card{padding:18px;gap:16px}
       .name{font-size:18px}
     }
+
+    @media (max-width: 480px) {
+      html, body {
+        font-size: 15px;
+      }
+      .wrap {
+        padding: 8px;
+      }
+      .card {
+        padding: 8px;
+        gap: 8px;
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(2,6,23,0.5);
+      }
+      .profile {
+        padding: 10px;
+        border-radius: 10px;
+        gap: 10px;
+      }
+      .avatar {
+        width: 72px !important;
+        height: 72px !important;
+        font-size: 24px !important;
+        border-radius: 24px !important;
+      }
+      .name {
+        font-size: 16px;
+      }
+      .role, .tagline, .chip, .skill {
+        font-size: 12px;
+      }
+      .contact a, .btn {
+        font-size: 13px;
+        padding: 8px 8px;
+      }
+      .section {
+        padding: 8px;
+        border-radius: 10px;
+      }
+      .info {
+        padding: 4px 2px;
+        gap: 8px;
+      }
+      .skills {
+        gap: 4px;
+      }
+      .footer {
+        flex-direction: column;
+        gap: 6px;
+        font-size: 12px;
+        align-items: flex-start;
+      }
+      iframe {
+        width: 100% !important;
+        min-width: 0;
+        height: 180px !important;
+        border-radius: 12px !important;
+      }
+      .profile-header {
+        width: 100% !important;
+        max-width: 180px !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -71,7 +134,7 @@
           <img src="PRIME LOCK DOORS LOGO-4.png" style="margin: 0 auto; margin-top: 10px; display: flex; justify-content: center;" width="290px" alt="Logo" class="profile-header">
         </div>
         <div class="tagline">Licenciando en Mercadotecnia, Desarrollador Web, Programador Python y Propietario de Prime Lock Doors</div>
-
+        <div style="display:flex;justify-content:center;margin-top:6px"><span class="chip">Hermosillo, Sonora</span></div>
         <div class="contact" aria-label="Contacto">
           <a class="btn primary" href="https://wa.me/5216625228513" target="_blank" id="whatsappBtn">💬 Mandar WhatsApp</a>
           <div style="display:flex;gap:8px;align-items:center">
@@ -82,11 +145,11 @@
 
         <div style="width:100%;display:flex;flex-direction:column;gap:6px;margin-top:auto">
           <div class="socials">
-            <a class="chip" href="#" aria-label="LinkedIn">LinkedIn</a>
+            <a class="chip" href="https://primelock-puertas-de-seguridad-hmo.netlify.app/?#inicio" aria-label="Página Web">Página Web</a>
             <a class="chip" href="#" aria-label="Facebook">Facebook</a>
             <a class="chip" href="#" aria-label="Instagram">Instagram</a>
           </div>
-          <div style="display:flex;justify-content:center;margin-top:6px"><span class="chip">Hermosillo, Sonora</span></div>
+          
         </div>
       </aside>
 
